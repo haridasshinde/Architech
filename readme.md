@@ -2,28 +2,28 @@
 You can also upload existing files from your computer using the instructions below.
 
 - Git global setup
-`git config --global user.name "Haridas Shinde"`
-`git config --global user.email "harishinde2@gmail.com"`
+`git config --global user.name "Haridas Shinde"` <br/>
+`git config --global user.email "harishinde2@gmail.com"` <br/>
 
--Create a new repository
-`git clone git@gitlab.com:haridas.shinde/architech.git`
-`cd architech`
-`touch README.md`
-`git add README.md`
-`git commit -m "add README"`
-`git push -u origin master`
+-Create a new repository <br/>
+`git clone git@gitlab.com:haridas.shinde/architech.git`<br/>
+`cd architech`<br/>
+`touch README.md`<br/>
+`git add README.md`<br/>
+`git commit -m "add README"`<br/>
+`git push -u origin master`<br/>
 
--Push an existing folder
-`cd existing_folder`
-`git init`
-`git remote add origin git@gitlab.com:haridas.shinde/architech.git`
-`git add .`
-`git commit -m "Initial commit"`
-`git push -u origin master`
+-Push an existing folder<br/>
+`cd existing_folder`<br/>
+`git init`<br/>
+`git remote add origin git@gitlab.com:haridas.shinde/architech.git`<br/>
+`git add .`<br/>
+`git commit -m "Initial commit"`<br/>
+`git push -u origin master`<br/>
 
--Push an existing Git repository
-`cd existing_repo`
-`git remote rename origin old-origin`
-`git remote add origin git@gitlab.com:haridas.shinde/architech.git`
-`git push -u origin --all`
-`git push -u origin --tags`
+-Push an existing Git repository<br/>
+`cd existing_repo`<br/>
+`git remote rename origin old-origin`<br/>
+`git remote add origin git@gitlab.com:haridas.shinde/architech.git`<br/>
+`git push -u origin --all`<br/>
+`git push -u origin --tags`<br/>
