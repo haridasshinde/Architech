@@ -1,7 +1,7 @@
 ## Command line instructions
 You can also upload existing files from your computer using the instructions below.
 
-- Git global setup
+- Git global setup<br/>
 `git config --global user.name "Haridas Shinde"` <br/>
 `git config --global user.email "harishinde2@gmail.com"` <br/>
 
