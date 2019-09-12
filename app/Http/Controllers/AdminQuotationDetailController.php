@@ -14,11 +14,11 @@
 			$this->limit = "20";
 			$this->orderby = "id,desc";
 			$this->global_privilege = false;
-			$this->button_table_action = false;
-			$this->button_bulk_action = true;
+			$this->button_table_action = true;
+			$this->button_bulk_action = false;
 			$this->button_action_style = "button_icon";
-			$this->button_add = false;
-			$this->button_edit = false;
+			$this->button_add = true;
+			$this->button_edit = true;
 			$this->button_delete = false;
 			$this->button_detail = false;
 			$this->button_show = true;
@@ -30,28 +30,28 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Quotation Header","name"=>"quotation_header_id","join"=>"gs_quotation_header,quotation_date"];
+			// $this->col[] = ["label"=>"Quotation Header","name"=>"quotation_header_id","join"=>"gs_quotation_header,quotation_date"];
 			$this->col[] = ["label"=>"Item Name","name"=>"item_id","join"=>"gs_item,nm"];
 			$this->col[] = ["label"=>"Qty","name"=>"qty"];
-			$this->col[] = ["label"=>"Uom Id","name"=>"uom_id","join"=>"gs_uom,nm"];
+			$this->col[] = ["label"=>"UOM Name","name"=>"uom_ids","join"=>"gs_uom,nm"];
 			$this->col[] = ["label"=>"Rate","name"=>"rate"];
-			$this->col[] = ["label"=>"Amount","name"=>"amount"];
 			$this->col[] = ["label"=>"Tax Amount","name"=>"tax_amount"];
+			$this->col[] = ["label"=>"Amount","name"=>"amount"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Quotation Header Id','name'=>'quotation_header_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'quotation_header,id'];
-			$this->form[] = ['label'=>'Item Id','name'=>'item_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'item,id'];
+			$this->form[] = ['label'=>'Quotation Header','name'=>'quotation_header_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_quotation_header,id'];
+			$this->form[] = ['label'=>'Item Name','name'=>'item_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_item,nm'];
 			$this->form[] = ['label'=>'Qty','name'=>'qty','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Uom Id','name'=>'uom_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'uom,id'];
+			$this->form[] = ['label'=>'UOM Name','name'=>'uom_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_uom,nm'];
 			$this->form[] = ['label'=>'Rate','name'=>'rate','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Amount','name'=>'amount','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Tax Amount','name'=>'tax_amount','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Product Img','name'=>'product_img','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','validation'=>'required|integer','width'=>'col-sm-10','dataenum'=>'Array'];
-			$this->form[] = ['label'=>'Created By','name'=>'created_by','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Updated By','name'=>'updated_by','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			// $this->form[] = ['label'=>'Product Img','name'=>'product_img','type'=>'file','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = array("label"=>"Product Image","name"=>"product_img","type"=>"upload","help"=>"Recommended resolution is 200x200px",'validation'=>'image|max:1000','resize_width'=>90,'resize_height'=>90);			
+			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
+
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
@@ -166,7 +166,18 @@
 	        | $this->script_js = "function() { ... }";
 	        |
 	        */
-	        $this->script_js = NULL;
+	        $this->script_js = "$( document ).ready(function() {
+		     	$( '#item_id' ).change(function() {
+
+	              var url = '".CRUDBooster::mainpath('item-info')."/'+$(this).val();
+	              localStorage.selected_vendor = '';
+	              $.ajax({url: url, success: function(result){
+	                  	// var json = JSON.parse(result);
+	                  	 $('#amount').val(result);	
+	                 
+	              }});
+	          });
+			});";
 
 
             /*
@@ -344,5 +355,9 @@
 
 	    //By the way, you can still create your own method in here... :) 
 
-
+	    public function getItemInfo($id)
+      	{
+        	$data = DB::table('gs_item')->where('id',$id)->where('is_active', 'Y')->first()->amount;
+        	return $data;
+      	}
 	}

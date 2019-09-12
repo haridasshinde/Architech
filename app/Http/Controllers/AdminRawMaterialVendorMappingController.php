@@ -33,7 +33,7 @@
 			$this->col[] = ["label"=>"Raw Material","name"=>"raw_material_id","join"=>"gs_raw_material,nm"];
 			$this->col[] = ["label"=>"Vendor Name","name"=>"vendor_id","join"=>"gs_vendor,vendor_name"];
 			$this->col[] = ["label"=>"Rate","name"=>"rate"];
-			$this->col[] = ["label"=>"Uom Name","name"=>"uom_id","join"=>"gs_uom,nm"];
+			$this->col[] = ["label"=>"Uom Name","name"=>"uom_ids","join"=>"gs_uom,nm"];
 			$this->col[] = ["label"=>"Is Active","name"=>"is_active"];
 			$this->col[] = ["label"=>"Created By","name"=>"created_by", 'join'=>'cms_users,name'];
 			$this->col[] = ["label"=>"Updated By","name"=>"updated_by", 'join'=>'cms_users,name'];
@@ -44,7 +44,7 @@
 			$this->form[] = ['label'=>'Raw Material','name'=>'raw_material_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_raw_material,nm'];
 			$this->form[] = ['label'=>'Vendor Name','name'=>'vendor_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_vendor,vendor_name'];
 			$this->form[] = ['label'=>'Rate','name'=>'rate','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Uom Name','name'=>'uom_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_uom,nm'];
+			$this->form[] = ['label'=>'Uom Name','name'=>'uom_ids','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_uom,nm'];
 			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 

@@ -48,6 +48,20 @@
 			$this->form[] = ['label'=>'Amount','name'=>'amount','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'Array'];
 			$this->form[] = ['label'=>'Photo','name'=>'photo','type'=>'upload','validation'=>'image|max:3000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
 			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
+
+			$columns = [];
+			// $columns[] = ['label'=>'Item Name','name'=>'item_id','type'=>'datamodal','datamodal_table'=>'gs_item','datamodal_columns'=>'nm','datamodal_select_to'=>'nm','datamodal_where'=>'is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+			$columns[] = ['label'=>'Material Name','name'=>'raw_material_id','type'=>'datamodal','datamodal_table'=>'gs_raw_material','datamodal_columns'=>'nm','datamodal_select_to'=>'gs_raw_material.nm','datamodal_where'=>'gs_raw_material.is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+
+			$columns[] = ['label'=>'Unit of Major','name'=>'uom_ids','type'=>'datamodal','datamodal_table'=>'gs_uom','datamodal_columns'=>'nm','datamodal_select_to'=>'gs_uom.nm','datamodal_where'=>'gs_uom.is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+			$columns[] = ['label'=>'Quantity','name'=>'qty','type'=>'number','required'=>true,'validation'=>'required'];
+		
+
+
+			$columns[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
+
+			$this->form[] = ['label'=>'Item Mapping','name'=>'item_mapping','type'=>'child','columns'=>$columns,'table'=>'gs_raw_material_item_mapping','foreign_key'=>'item_id','validation'=>'required'];
+
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
@@ -74,7 +88,8 @@
 			| @parent_columns = Sparate with comma, e.g : name,created_at
 	        | 
 	        */
-	        $this->sub_module = array();
+	        // $this->sub_module = array();
+
 
 
 	        /* 
@@ -247,6 +262,9 @@
 	    */
 	    public function hook_query_index(&$query) {
 	        //Your code here
+
+
+
 	            
 	    }
 
@@ -271,6 +289,9 @@
 	        //Your code here
 	        $postdata['is_active'] = $postdata['is_active'] ? 'Y':'N';
         	$postdata['created_by'] = CRUDBooster::myId();
+
+
+
 
 	    }
 
@@ -298,6 +319,10 @@
 	        //Your code here
 	    	$postdata['is_active'] = $postdata['is_active'] ? 'Y':'N';
         	$postdata['updated_by'] = CRUDBooster::myId();
+        	// echo "<pre>";
+        	// print_r($postdata);
+        	// echo "</pre>";
+        	// die();
 	    }
 
 	    /* 

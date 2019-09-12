@@ -5,7 +5,7 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminGsQuotationHeaderController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminBoqController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
@@ -19,66 +19,44 @@
 			$this->button_action_style = "button_icon";
 			$this->button_add = true;
 			$this->button_edit = true;
-			$this->button_delete = false;
+			$this->button_delete = true;
 			$this->button_detail = true;
-			$this->button_show = false;
+			$this->button_show = true;
 			$this->button_filter = true;
 			$this->button_import = false;
 			$this->button_export = false;
-			$this->table = "gs_quotation_header";
+			$this->table = "gs_boq";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Quotation Date","name"=>"quotation_date"];
-			$this->col[] = ["label"=>"Quotation Approval Date","name"=>"quotation_approval_date"];
-			$this->col[] = ["label"=>"Project Name","name"=>"project_id","join"=>"gs_client_site_project,project_name"];
-			$this->col[] = ["label"=>"Client Name","name"=>"client_id","join"=>"gs_client,client_name"];
-			$this->col[] = ["label"=>"Site Name","name"=>"site_id","join"=>"gs_client_site,site_name"];
-			$this->col[] = ["label"=>"Status","name"=>"status","join"=>"gs_status_master,name"];
-			// $this->col[] = ["label"=>"Attachment Details","name"=>"attachment_details"];
+			$this->col[] = ["label"=>"Raw Material","name"=>"raw_material_id","join"=>"gs_raw_material,nm"];
+			$this->col[] = ["label"=>"Category","name"=>"category"];
+			$this->col[] = ["label"=>"Make Model","name"=>"make_model"];
+			$this->col[] = ["label"=>"Total Qty","name"=>"total_qty"];
+			$this->col[] = ["label"=>"Total Order Qty","name"=>"total_order_qty"];
+			$this->col[] = ["label"=>"Is Active","name"=>"is_active"];
+			$this->col[] = ["label"=>"Created By","name"=>"created_by", 'join'=>'cms_users,name'];
+			$this->col[] = ["label"=>"Updated By","name"=>"updated_by", 'join'=>'cms_users,name'];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Quotation Date','name'=>'quotation_date','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'PO No.','name'=>'customer_po_no','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
-
-			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'gs_status_master,name'];
-			$this->form[] = ['label'=>'Quotation Approval Date','name'=>'quotation_approval_date','type'=>'datetime','validation'=>'required|date_format:Y-m-d H:i:s','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Project Name','name'=>'project_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_client_site_project,project_name'];
-			$this->form[] = ['label'=>'Client Name','name'=>'client_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_client,client_name'];
-			$this->form[] = ['label'=>'Site Name','name'=>'site_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_client_site,site_name'];
-			$this->form[] = array("label"=>"Attachments","name"=>"attachment_details","type"=>"upload",'validation'=>'image|max:5000');
-
-			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
-			$columns = [];
-			$columns[] = ['label'=>'Item Name','name'=>'item_id','id'=> 'child_form_item_id','type'=>'datamodal','datamodal_table'=>'gs_item','datamodal_columns'=>'nm','datamodal_select_to'=>'gs_item.nm,amount','datamodal_where'=>'gs_item.is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
-
-
-
-			// $columns[] = ['label'=>'Unit of Major','name'=>'uom_ids','type'=>'datamodal','datamodal_table'=>'gs_uom','datamodal_columns'=>'nm','datamodal_select_to'=>'gs_uom.nm','datamodal_where'=>'gs_uom.is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
-			$columns[] = ['label'=>'Quantity','name'=>'qty','type'=>'number','required'=>true,'validation'=>'required'];
-			$columns[] = ['label'=>'Rate','name'=>'rate','type'=>'number','required'=>true,'validation'=>'required'];
-			$columns[] = ['label'=>'Amount','name'=>'amount','type'=>'number','required'=>true,'validation'=>'required'];
-			$columns[] = ['label'=>'Tax Amount','name'=>'tax_amount','type'=>'number','required'=>true,'validation'=>'required'];
-
-			$columns[] = array("label"=>"Image","name"=>"product_img","type"=>"upload",'validation'=>'image|max:5000');
-			$columns[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
-
-			$this->form[] = ['label'=>'Quotation Details','name'=>'quotationDetails','type'=>'child','columns'=>$columns,'table'=>'gs_quotation_detail','foreign_key'=>'quotation_header_id','validation'=>'required'];
-
+			$this->form[] = ['label'=>'Raw Material','name'=>'raw_material_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'gs_raw_material,nm'];
+			$this->form[] = ['label'=>'Category','name'=>'category','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Make Model','name'=>'make_model','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Total Qty','name'=>'total_qty','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Total Order Qty','name'=>'total_order_qty','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'Y|Yes;N|No','validation'=>'required','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Quotation Date","name"=>"quotation_date","type"=>"date","required"=>TRUE,"validation"=>"required|date"];
-			//$this->form[] = ["label"=>"Status","name"=>"status","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Quotation Approval Date","name"=>"quotation_approval_date","type"=>"datetime","required"=>TRUE,"validation"=>"required|date_format:Y-m-d H:i:s"];
-			//$this->form[] = ["label"=>"Project Id","name"=>"project_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"project,id"];
-			//$this->form[] = ["label"=>"Client Id","name"=>"client_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"client,id"];
-			//$this->form[] = ["label"=>"Site Id","name"=>"site_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"site,id"];
-			//$this->form[] = ["label"=>"Attachment Details","name"=>"attachment_details","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Raw Material Id","name"=>"raw_material_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"raw_material,id"];
+			//$this->form[] = ["label"=>"Category","name"=>"category","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Make Model","name"=>"make_model","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Total Qty","name"=>"total_qty","type"=>"money","required"=>TRUE,"validation"=>"required|integer|min:0"];
+			//$this->form[] = ["label"=>"Total Order Qty","name"=>"total_order_qty","type"=>"money","required"=>TRUE,"validation"=>"required|integer|min:0"];
 			//$this->form[] = ["label"=>"Is Active","name"=>"is_active","type"=>"radio","required"=>TRUE,"validation"=>"required|integer","dataenum"=>"Array"];
 			//$this->form[] = ["label"=>"Created By","name"=>"created_by","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
 			//$this->form[] = ["label"=>"Updated By","name"=>"updated_by","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
@@ -181,9 +159,7 @@
 	        | $this->script_js = "function() { ... }";
 	        |
 	        */
-	        $this->script_js = "$( document ).ready(function() {
-	        	console.log(ADMIN_PATH );
-			});";
+	        $this->script_js = NULL;
 
 
             /*
@@ -271,7 +247,8 @@
 	    */
 	    public function hook_query_index(&$query) {
 	        //Your code here
-	            
+	          
+
 	    }
 
 	    /*
@@ -293,7 +270,7 @@
 	    */
 	    public function hook_before_add(&$postdata) {        
 	        //Your code here
-	    	$postdata['is_active'] = $postdata['is_active'] ? 'Y':'N';
+	    	// $postdata['is_active'] = $postdata['is_active'] ? 'Y':'N';
         	$postdata['created_by'] = CRUDBooster::myId();
 	    }
 
@@ -306,7 +283,7 @@
 	    */
 	    public function hook_after_add($id) {        
 	        //Your code here
-
+	    		
 	    }
 
 	    /* 
@@ -319,8 +296,8 @@
 	    */
 	    public function hook_before_edit(&$postdata,$id) {        
 	        //Your code here
-	    	$postdata['is_active'] = $postdata['is_active'] ? 'Y':'N';
-        	$postdata['created_by'] = CRUDBooster::myId();
+	    	// $postdata['is_active'] = $postdata['is_active'] ? 'Y':'N';
+        	$postdata['updated_by'] = CRUDBooster::myId();
 	    }
 
 	    /* 
@@ -362,11 +339,6 @@
 
 
 	    //By the way, you can still create your own method in here... :) 
-	    public function getItemInfo($id)
-      	{
-        	$data = DB::table('gs_item')->where('id',$id)->where('is_active', 'Y')->first()->amount;
-        	return $data;
-      	}
 
 
 	}

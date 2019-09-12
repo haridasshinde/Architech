@@ -48,6 +48,15 @@
 			$this->form[] = ['label'=>'Default Vendor','name'=>'default_vendor','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10', 'datatable'=>'gs_vendor,vendor_name'];
 			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Photo','name'=>'photo','type'=>'upload','validation'=>'image|max:3000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
+			$columns = [];
+			$columns[] = ['label'=>'Vendor Name','name'=>'vendor_id','type'=>'datamodal','datamodal_table'=>'gs_vendor','datamodal_columns'=>'vendor_name','datamodal_select_to'=>'vendor_name','datamodal_where'=>'is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+			$columns[] = ['label'=>'Unit of Major','name'=>'uom_ids','type'=>'datamodal','datamodal_table'=>'gs_uom','datamodal_columns'=>'nm','datamodal_select_to'=>'gs_uom.nm','datamodal_where'=>'gs_uom.is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+			$columns[] = ['label'=>'Rate','name'=>'rate','type'=>'number','required'=>true,'validation'=>'required'];
+
+			$columns[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
+
+			$this->form[] = ['label'=>'Vendor Raw Material Map','name'=>'raw_materila_mapping','type'=>'child','columns'=>$columns,'table'=>'gs_raw_material_vendor_mapping','foreign_key'=>'raw_material_id','validation'=>'required'];
+
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM

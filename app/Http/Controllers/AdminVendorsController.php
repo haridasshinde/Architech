@@ -19,7 +19,7 @@
 			$this->button_action_style = "button_icon";
 			$this->button_add = true;
 			$this->button_edit = true;
-			$this->button_delete = true;
+			$this->button_delete = false;
 			$this->button_detail = true;
 			$this->button_show = true;
 			$this->button_filter = true;
@@ -31,12 +31,16 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Vendor Name","name"=>"vendor_name"];
-			$this->col[] = ["label"=>"Address1","name"=>"address1"];
-			$this->col[] = ["label"=>"Address2","name"=>"address2"];
-			$this->col[] = ["label"=>"City","name"=>"city"];
-			$this->col[] = ["label"=>"State","name"=>"state"];
-			$this->col[] = ["label"=>"Pincode","name"=>"pincode"];
-			$this->col[] = ["label"=>"Gst No","name"=>"gst_no"];
+			// $this->col[] = ["label"=>"Address1","name"=>"address1"];
+			// $this->col[] = ["label"=>"Address2","name"=>"address2"];
+			// $this->col[] = ["label"=>"City","name"=>"city"];
+			// $this->col[] = ["label"=>"State","name"=>"state"];
+			// $this->col[] = ["label"=>"Pincode","name"=>"pincode"];
+			$this->col[] = ["label"=>"Bank Acc No","name"=>"bank_acc_no"];
+			$this->col[] = ["label"=>"IFSC Code","name"=>"ifsc_code"];
+			$this->col[] = ["label"=>"Branch Name","name"=>"branch_name"];
+
+			$this->col[] = ["label"=>"GST No","name"=>"gst_no"];
 			$this->col[] = ["label"=>"Created By","name"=>"created_by","join"=>"cms_users,name"];
 			$this->col[] = ["label"=>"Updated By","name"=>"updated_by","join"=>"cms_users,name"];
 			$this->col[] = ["label"=>"Is Active","name"=>"is_active"];
@@ -50,15 +54,25 @@
 			$this->form[] = ['label'=>'City','name'=>'city','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'State','name'=>'state','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Pincode','name'=>'pincode','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Gst No','name'=>'gst_no','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Payment Template','name'=>'payment_template_id','type'=>'select2','validation'=>'integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'GST No','name'=>'gst_no','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Payment Template','name'=>'payment_template_id','type'=>'select2','validation'=>'integer|min:0','width'=>'col-sm-10',"datatable"=>"gs_payment_template,name"];
 			$this->form[] = ['label'=>'Bank Acc No','name'=>'bank_acc_no','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Ifsc Code','name'=>'ifsc_code','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'IFSC Code','name'=>'ifsc_code','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Branch Name','name'=>'branch_name','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Phone No','name'=>'phone_no','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Contact Person','name'=>'contact_person','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Pan No','name'=>'pan_no','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'PAN No','name'=>'pan_no','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
+
+			$columns = [];
+			$columns[] = ['label'=>'Raw Material Name','name'=>'raw_material_id','type'=>'datamodal','datamodal_table'=>'gs_raw_material','datamodal_columns'=>'nm','datamodal_select_to'=>'nm','datamodal_where'=>'is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+			$columns[] = ['label'=>'Unit of Major','name'=>'uom_ids','type'=>'datamodal','datamodal_table'=>'gs_uom','datamodal_columns'=>'nm','datamodal_select_to'=>'gs_uom.nm','datamodal_where'=>'gs_uom.is_active = "Y"','datamodal_size'=>'large','required'=>true,'validation'=>'required'];
+
+			$columns[] = ['label'=>'Rate','name'=>'rate','type'=>'number','required'=>true,'validation'=>'required'];
+			$columns[] = ['label'=>'Is Active','name'=>'is_active','type'=>'radio','dataenum'=>'1|Yes;0|No','validation'=>'required|integer','width'=>'col-sm-10'];
+
+			$this->form[] = ['label'=>'Raw Material Mapping','name'=>'item_mapping','type'=>'child','columns'=>$columns,'table'=>'gs_raw_material_vendor_mapping','foreign_key'=>'vendor_id','validation'=>'required'];
+
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
