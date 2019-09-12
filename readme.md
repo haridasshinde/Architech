@@ -27,3 +27,6 @@ You can also upload existing files from your computer using the instructions bel
 `git remote add origin git@gitlab.com:haridas.shinde/architech.git`<br/>
 `git push -u origin --all`<br/>
 `git push -u origin --tags`<br/>
+
+- Composer Update
+`php artisan crudbooster:update`
