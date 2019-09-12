@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 07, 2019 at 10:30 PM
+-- Generation Time: Sep 12, 2019 at 06:41 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.1.32
 
@@ -163,7 +163,60 @@ INSERT INTO `cms_logs` (`id`, `ipaddress`, `useragent`, `url`, `description`, `d
 (13, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_client_site_project/add-save', 'Add New Data jljkljlkj at Client Site Project', '', 1, '2019-09-07 13:58:06', NULL),
 (14, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_company/add-save', 'Add New Data Software at Company', '', 1, '2019-09-07 14:04:29', NULL),
 (15, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_company/edit-save/1', 'Update data Software at Company', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>address2</td><td></td><td>dsfdfsdf</td></tr><tr><td>updated_by</td><td></td><td>1</td></tr></tbody></table>', 1, '2019-09-07 14:05:32', NULL),
-(16, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_payment_template/add-save', 'Add New Data Montly First Monday at Payment Template', '', 1, '2019-09-07 14:43:20', NULL);
+(16, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_payment_template/add-save', 'Add New Data Montly First Monday at Payment Template', '', 1, '2019-09-07 14:43:20', NULL),
+(17, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-07 22:41:12', NULL),
+(18, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/users/edit-save/1', 'Update data Super Admin at Users Management', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>photo</td><td></td><td>uploads/1/2019-09/project.png</td></tr><tr><td>password</td><td>$2y$10$fdQraUwSdOkQ1vZqjMwk2umXZH31ID.rg/HIwaIZ2AGugH5tVpL36</td><td>$2y$10$IJy4IvbnpqHu4riY56BqJepSiuCHshbuYIslTjTh6KMPy2TuAOE8m</td></tr><tr><td>id_cms_privileges</td><td>1</td><td></td></tr><tr><td>status</td><td>Active</td><td></td></tr></tbody></table>', 1, '2019-09-07 22:42:01', NULL),
+(19, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/logout', 'admin@crudbooster.com logout', '', 1, '2019-09-07 22:42:13', NULL),
+(20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-07 22:42:16', NULL),
+(21, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_payment_template/add-save', 'Add New Data Every Friday at Payment Template', '', 1, '2019-09-07 22:46:35', NULL),
+(22, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/vendors/edit-save/1', 'Update data Test Vendor at Vendor', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>address2</td><td></td><td></td></tr><tr><td>payment_template_id</td><td></td><td>1</td></tr><tr><td>updated_by</td><td></td><td>1</td></tr></tbody></table>', 1, '2019-09-07 22:53:29', NULL),
+(23, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/items/edit-save/1', 'Update data  at Items', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-07 23:38:49', NULL),
+(24, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/items/edit-save/1', 'Update data  at Items', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-07 23:42:01', NULL),
+(25, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/items/edit-save/1', 'Update data  at Items', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-08 00:13:33', NULL),
+(26, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/items/edit-save/1', 'Update data  at Items', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-08 00:15:53', NULL),
+(27, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/raw_material/edit-save/1', 'Update data  at Raw Material', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-08 00:52:30', NULL),
+(28, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/raw_material/edit-save/1', 'Update data  at Raw Material', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-08 00:52:55', NULL),
+(29, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-08 01:04:05', NULL),
+(30, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/uom/add-save', 'Add New Data  at Unit of Major', '', 1, '2019-09-08 01:27:57', NULL),
+(31, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/vendors/edit-save/1', 'Update data Test Vendor at Vendor', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>address2</td><td></td><td></td></tr></tbody></table>', 1, '2019-09-08 01:28:36', NULL),
+(32, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/raw_material/add-save', 'Add New Data  at Raw Material', '', 1, '2019-09-08 01:29:38', NULL),
+(33, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/vendors/edit-save/1', 'Update data Test Vendor at Vendor', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>address2</td><td></td><td></td></tr></tbody></table>', 1, '2019-09-08 01:30:03', NULL),
+(34, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/menu_management/edit-save/12', 'Update data Quotation Header at Menu Management', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>color</td><td></td><td>normal</td></tr><tr><td>sorting</td><td>12</td><td></td></tr></tbody></table>', 1, '2019-09-08 02:28:46', NULL),
+(35, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/menu_management/add-save', 'Add New Data Masters at Menu Management', '', 1, '2019-09-08 02:30:17', NULL),
+(36, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/menu_management/edit-save/15', 'Update data Masters at Menu Management', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>sorting</td><td></td><td></td></tr></tbody></table>', 1, '2019-09-08 02:30:37', NULL),
+(37, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_quotation_list/edit-save/1', 'Update data  at Quotation List', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>attachment_details</td><td></td><td>uploads/1/2019-09/screenshot_2019_09_08_crudbooster_edit_vendor.png</td></tr></tbody></table>', 1, '2019-09-08 03:39:43', NULL),
+(38, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_quotation_list/edit-save/1', 'Update data  at Quotation List', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-08 03:55:41', NULL),
+(39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/logout', 'admin@crudbooster.com logout', '', 1, '2019-09-08 05:40:18', NULL),
+(40, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-08 05:40:22', NULL),
+(41, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_quotation_list/edit-save/1', 'Update data  at Quotation List', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-08 06:40:53', NULL),
+(42, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-09 08:22:07', NULL),
+(43, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.71', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-09 08:24:18', NULL),
+(44, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_quotation_list/delete-image', 'Delete the image of 1 at Quotation List', '', 1, '2019-09-09 08:31:21', NULL),
+(45, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_quotation_list/edit-save/1', 'Update data  at Quotation List', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 08:32:06', NULL),
+(46, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 08:43:55', NULL),
+(47, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>is_active</td><td>0</td><td>1</td></tr></tbody></table>', 1, '2019-09-09 08:48:36', NULL),
+(48, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/1', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 08:49:23', NULL),
+(49, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 08:49:32', NULL),
+(50, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>is_active</td><td>N</td><td>Y</td></tr></tbody></table>', 1, '2019-09-09 08:50:42', NULL),
+(51, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 08:52:33', NULL),
+(52, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 08:52:41', NULL),
+(53, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>is_active</td><td>Y</td><td>N</td></tr></tbody></table>', 1, '2019-09-09 08:53:03', NULL),
+(54, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>is_active</td><td>N</td><td>Y</td></tr></tbody></table>', 1, '2019-09-09 08:53:26', NULL),
+(55, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/2', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 09:03:58', NULL),
+(56, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/boq/edit-save/1', 'Update data  at BOQ', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-09 09:04:10', NULL),
+(57, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-10 07:47:53', NULL),
+(58, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/gs_quotation_list/edit-save/1', 'Update data  at Quotation List', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>customer_po_no</td><td></td><td>123</td></tr></tbody></table>', 1, '2019-09-10 07:58:43', NULL),
+(59, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-11 03:39:34', NULL),
+(60, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/login', 'admin@crudbooster.com login with IP Address 127.0.0.1', '', 1, '2019-09-12 09:21:08', NULL),
+(61, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/vendor_raw_material_mapping/edit-save/2', 'Update data  at Vendor Raw Material Map', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>created_by</td><td></td><td></td></tr><tr><td>updated_by</td><td></td><td>1</td></tr></tbody></table>', 1, '2019-09-12 09:59:46', NULL),
+(62, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/item__raw_material_mapping/edit-save/2', 'Update data  at Item Raw Material Map', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>created_by</td><td></td><td></td></tr><tr><td>updated_by</td><td></td><td>1</td></tr></tbody></table>', 1, '2019-09-12 10:00:57', NULL),
+(63, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/item__raw_material_mapping/edit-save/1', 'Update data  at Item Raw Material Map', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>created_by</td><td></td><td></td></tr><tr><td>updated_by</td><td></td><td>1</td></tr></tbody></table>', 1, '2019-09-12 10:01:04', NULL),
+(64, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/item__raw_material_mapping/edit-save/1', 'Update data  at Item Raw Material Map', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>created_by</td><td></td><td></td></tr></tbody></table>', 1, '2019-09-12 10:01:11', NULL),
+(65, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/raw_material/edit-save/2', 'Update data  at Raw Material', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-12 10:01:40', NULL),
+(66, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/vendors/edit-save/1', 'Update data Test Vendor at Vendor', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>address2</td><td></td><td></td></tr></tbody></table>', 1, '2019-09-12 10:01:54', NULL),
+(67, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/items/edit-save/3', 'Update data  at Items', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody></tbody></table>', 1, '2019-09-12 10:57:41', NULL),
+(68, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/vendor_raw_material_mapping/edit-save/2', 'Update data  at Vendor Raw Material Map', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>created_by</td><td></td><td></td></tr><tr><td>updated_by</td><td></td><td>1</td></tr></tbody></table>', 1, '2019-09-12 10:57:58', NULL),
+(69, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36', 'http://127.0.0.1:8000/admin/item__raw_material_mapping/edit-save/1', 'Update data  at Item Raw Material Map', '<table class=\"table table-striped\"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>created_by</td><td></td><td></td></tr></tbody></table>', 1, '2019-09-12 10:58:49', NULL);
 
 -- --------------------------------------------------------
 
@@ -192,20 +245,22 @@ CREATE TABLE `cms_menus` (
 --
 
 INSERT INTO `cms_menus` (`id`, `name`, `type`, `path`, `color`, `icon`, `parent_id`, `is_active`, `is_dashboard`, `id_cms_privileges`, `sorting`, `created_at`, `updated_at`) VALUES
-(1, 'Item Type', 'Route', 'AdminItemTypeControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 1, '2019-09-07 12:44:54', NULL),
-(2, 'Unit of Major', 'Route', 'AdminUomControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 2, '2019-09-07 12:48:47', NULL),
-(3, 'Items', 'Route', 'AdminItemControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 3, '2019-09-07 12:52:30', NULL),
-(4, 'Raw Material', 'Route', 'AdminRawMaterialControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 5, '2019-09-07 13:02:04', NULL),
-(5, 'Vendor', 'Route', 'AdminVendorsControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 4, '2019-09-07 13:09:42', NULL),
-(6, 'Vendor Raw Material Map', 'Route', 'AdminRawMaterialVendorMappingControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 6, '2019-09-07 13:18:12', NULL),
-(7, 'Item Raw Material Map', 'Route', 'AdminItemRawMaterialMappingControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 7, '2019-09-07 13:26:36', NULL),
-(8, 'Client', 'Route', 'AdminGsClientControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 8, '2019-09-07 13:37:35', NULL),
-(9, 'Client Site', 'Route', 'AdminGsClientSiteControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 9, '2019-09-07 13:44:57', NULL),
-(10, 'Client Site Project', 'Route', 'AdminGsClientSiteProjectControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 10, '2019-09-07 13:54:47', NULL),
-(11, 'Company', 'Route', 'AdminGsCompanyControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 11, '2019-09-07 13:59:08', NULL),
-(12, 'Quotation Header', 'Route', 'AdminGsQuotationHeaderControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 12, '2019-09-07 14:13:58', NULL),
-(13, 'Quotation Details', 'Route', 'AdminQuotationDetailControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 13, '2019-09-07 14:17:48', NULL),
-(14, 'Payment Template', 'Route', 'AdminGsPaymentTemplateControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 14, '2019-09-07 14:40:24', NULL);
+(1, 'Item Type', 'Route', 'AdminItemTypeControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 1, '2019-09-07 12:44:54', NULL),
+(2, 'Unit of Major', 'Route', 'AdminUomControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 2, '2019-09-07 12:48:47', NULL),
+(3, 'Items', 'Route', 'AdminItemControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 3, '2019-09-07 12:52:30', NULL),
+(4, 'Raw Material', 'Route', 'AdminRawMaterialControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 5, '2019-09-07 13:02:04', NULL),
+(5, 'Vendor', 'Route', 'AdminVendorsControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 4, '2019-09-07 13:09:42', NULL),
+(6, 'Vendor Raw Material Map', 'Route', 'AdminRawMaterialVendorMappingControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 6, '2019-09-07 13:18:12', NULL),
+(7, 'Item Raw Material Map', 'Route', 'AdminItemRawMaterialMappingControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 7, '2019-09-07 13:26:36', NULL),
+(8, 'Client', 'Route', 'AdminGsClientControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 8, '2019-09-07 13:37:35', NULL),
+(9, 'Client Site', 'Route', 'AdminGsClientSiteControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 9, '2019-09-07 13:44:57', NULL),
+(10, 'Client Site Project', 'Route', 'AdminGsClientSiteProjectControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 10, '2019-09-07 13:54:47', NULL),
+(11, 'Company', 'Route', 'AdminGsCompanyControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 11, '2019-09-07 13:59:08', NULL),
+(12, 'Quotation List', 'Route', 'AdminGsQuotationHeaderControllerGetIndex', 'normal', 'fa fa-star', 0, 1, 0, 1, 2, '2019-09-07 14:13:58', '2019-09-08 02:28:46'),
+(13, 'Quotation Details', 'Route', 'AdminQuotationDetailControllerGetIndex', NULL, 'fa fa-star', 0, 0, 0, 1, 1, '2019-09-07 14:17:48', NULL),
+(14, 'Payment Template', 'Route', 'AdminGsPaymentTemplateControllerGetIndex', NULL, 'fa fa-star', 15, 1, 0, 1, 12, '2019-09-07 14:40:24', NULL),
+(15, 'Masters', 'Route', 'a', 'normal', 'fa fa-star', 0, 1, 0, 1, 1, '2019-09-08 02:30:17', '2019-09-08 02:30:37'),
+(16, 'BOQ', 'Route', 'AdminBoqControllerGetIndex', NULL, 'fa fa-star', 0, 1, 0, 1, 4, '2019-09-09 08:39:16', NULL);
 
 -- --------------------------------------------------------
 
@@ -235,9 +290,12 @@ INSERT INTO `cms_menus_privileges` (`id`, `id_cms_menus`, `id_cms_privileges`) V
 (9, 9, 1),
 (10, 10, 1),
 (11, 11, 1),
-(12, 12, 1),
 (13, 13, 1),
-(14, 14, 1);
+(14, 14, 1),
+(15, 12, 1),
+(16, NULL, 1),
+(17, 15, 1),
+(18, 16, 1);
 
 -- --------------------------------------------------------
 
@@ -286,9 +344,10 @@ INSERT INTO `cms_moduls` (`id`, `name`, `icon`, `path`, `table_name`, `controlle
 (20, 'Client Site', 'fa fa-star', 'client_site', 'gs_client_site', 'AdminGsClientSiteController', 0, 0, '2019-09-07 13:44:56', NULL, NULL),
 (21, 'Client Site Project', 'fa fa-star', 'gs_client_site_project', 'gs_client_site_project', 'AdminGsClientSiteProjectController', 0, 0, '2019-09-07 13:54:47', NULL, NULL),
 (22, 'Company', 'fa fa-star', 'gs_company', 'gs_company', 'AdminGsCompanyController', 0, 0, '2019-09-07 13:59:08', NULL, NULL),
-(23, 'Quotation Header', 'fa fa-star', 'gs_quotation_header', 'gs_quotation_header', 'AdminGsQuotationHeaderController', 0, 0, '2019-09-07 14:13:57', NULL, NULL),
+(23, 'Quotation List', 'fa fa-star', 'gs_quotation_list', 'gs_quotation_header', 'AdminGsQuotationHeaderController', 0, 0, '2019-09-07 14:13:57', NULL, NULL),
 (24, 'Quotation Details', 'fa fa-star', 'quotation_detail', 'gs_quotation_detail', 'AdminQuotationDetailController', 0, 0, '2019-09-07 14:17:47', NULL, NULL),
-(25, 'Payment Template', 'fa fa-star', 'gs_payment_template', 'gs_payment_template', 'AdminGsPaymentTemplateController', 0, 0, '2019-09-07 14:40:23', NULL, NULL);
+(25, 'Payment Template', 'fa fa-star', 'gs_payment_template', 'gs_payment_template', 'AdminGsPaymentTemplateController', 0, 0, '2019-09-07 14:40:23', NULL, NULL),
+(26, 'BOQ', 'fa fa-star', 'boq', 'gs_boq', 'AdminBoqController', 0, 0, '2019-09-09 08:39:16', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -326,7 +385,9 @@ CREATE TABLE `cms_privileges` (
 --
 
 INSERT INTO `cms_privileges` (`id`, `name`, `is_superadmin`, `theme_color`, `created_at`, `updated_at`) VALUES
-(1, 'Super Administrator', 1, 'skin-red', '2019-09-07 12:13:09', NULL);
+(1, 'Super Administrator', 1, 'skin-red', '2019-09-07 12:13:09', NULL),
+(2, 'Vendor', 0, 'skin-blue', NULL, NULL),
+(3, 'Clint (Customer)', 0, 'skin-blue', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -376,7 +437,40 @@ INSERT INTO `cms_privileges_roles` (`id`, `is_visible`, `is_create`, `is_read`, 
 (22, 1, 1, 1, 1, 1, 1, 22, NULL, NULL),
 (23, 1, 1, 1, 1, 1, 1, 23, NULL, NULL),
 (24, 1, 1, 1, 1, 1, 1, 24, NULL, NULL),
-(25, 1, 1, 1, 1, 1, 1, 25, NULL, NULL);
+(25, 1, 1, 1, 1, 1, 1, 25, NULL, NULL),
+(26, 1, 1, 1, 1, 1, 1, 26, NULL, NULL),
+(27, 1, 1, 1, 1, 0, 2, 26, NULL, NULL),
+(28, 1, 1, 1, 1, 0, 2, 19, NULL, NULL),
+(29, 1, 1, 1, 1, 0, 2, 20, NULL, NULL),
+(30, 1, 1, 1, 1, 0, 2, 21, NULL, NULL),
+(31, 1, 1, 1, 1, 0, 2, 22, NULL, NULL),
+(32, 1, 1, 1, 1, 0, 2, 18, NULL, NULL),
+(33, 1, 1, 1, 1, 0, 2, 12, NULL, NULL),
+(34, 1, 1, 1, 1, 0, 2, 14, NULL, NULL),
+(35, 1, 1, 1, 1, 0, 2, 25, NULL, NULL),
+(36, 1, 1, 1, 1, 0, 2, 24, NULL, NULL),
+(37, 1, 1, 1, 1, 0, 2, 23, NULL, NULL),
+(38, 1, 1, 1, 1, 0, 2, 15, NULL, NULL),
+(39, 1, 1, 1, 1, 0, 2, 13, NULL, NULL),
+(40, 1, 1, 1, 1, 0, 2, 4, NULL, NULL),
+(41, 1, 1, 1, 1, 0, 2, 16, NULL, NULL),
+(42, 1, 1, 1, 1, 0, 2, 17, NULL, NULL),
+(43, 1, 1, 1, 1, 1, 3, 26, NULL, NULL),
+(44, 1, 1, 1, 1, 1, 3, 19, NULL, NULL),
+(45, 1, 1, 1, 1, 1, 3, 20, NULL, NULL),
+(46, 1, 1, 1, 1, 1, 3, 21, NULL, NULL),
+(47, 1, 1, 1, 1, 1, 3, 22, NULL, NULL),
+(48, 1, 1, 1, 1, 1, 3, 18, NULL, NULL),
+(49, 1, 1, 1, 1, 1, 3, 12, NULL, NULL),
+(50, 1, 1, 1, 1, 1, 3, 14, NULL, NULL),
+(51, 1, 1, 1, 1, 1, 3, 25, NULL, NULL),
+(52, 1, 1, 1, 1, 1, 3, 24, NULL, NULL),
+(53, 1, 1, 1, 1, 1, 3, 23, NULL, NULL),
+(54, 1, 1, 1, 1, 1, 3, 15, NULL, NULL),
+(55, 1, 1, 1, 1, 1, 3, 13, NULL, NULL),
+(56, 1, 1, 1, 1, 1, 3, 4, NULL, NULL),
+(57, 1, 1, 1, 1, 1, 3, 16, NULL, NULL),
+(58, 1, 1, 1, 1, 1, 3, 17, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -475,7 +569,7 @@ CREATE TABLE `cms_users` (
 --
 
 INSERT INTO `cms_users` (`id`, `name`, `photo`, `email`, `password`, `id_cms_privileges`, `created_at`, `updated_at`, `status`) VALUES
-(1, 'Super Admin', NULL, 'admin@crudbooster.com', '$2y$10$fdQraUwSdOkQ1vZqjMwk2umXZH31ID.rg/HIwaIZ2AGugH5tVpL36', 1, '2019-09-07 12:13:08', NULL, 'Active');
+(1, 'Super Admin', 'uploads/1/2019-09/project.png', 'admin@crudbooster.com', '$2y$10$IJy4IvbnpqHu4riY56BqJepSiuCHshbuYIslTjTh6KMPy2TuAOE8m', 1, '2019-09-07 12:13:08', '2019-09-07 22:42:01', 'Active');
 
 -- --------------------------------------------------------
 
@@ -485,9 +579,10 @@ INSERT INTO `cms_users` (`id`, `name`, `photo`, `email`, `password`, `id_cms_pri
 
 CREATE TABLE `gs_boq` (
   `id` int(10) UNSIGNED NOT NULL,
+  `quotation_header_id` int(11) NOT NULL,
   `raw_material_id` int(11) NOT NULL,
-  `category` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `make_model` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `uom_id` int(11) NOT NULL,
   `total_qty` double(20,2) NOT NULL,
   `total_order_qty` double(20,2) NOT NULL,
   `is_active` char(1) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -578,7 +673,7 @@ CREATE TABLE `gs_client_site_project` (
 --
 
 INSERT INTO `gs_client_site_project` (`id`, `client_id`, `client_site_id`, `project_name`, `is_active`, `created_by`, `created_at`, `updated_by`, `updated_at`) VALUES
-(2, 1, 1, 'jljkljlkj', 'Y', 1, '2019-09-07 13:58:06', NULL, NULL);
+(2, 1, 1, 'Akurdi Project', 'Y', 1, '2019-09-07 13:58:06', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -638,7 +733,9 @@ CREATE TABLE `gs_item` (
 --
 
 INSERT INTO `gs_item` (`id`, `nm`, `description`, `uom_id`, `is_active`, `amount`, `photo`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'asfdasf', 'adfadsf', 1, 'Y', 1030.00, NULL, 1, NULL, '2019-09-07 12:59:42', NULL);
+(1, 'Item 3', 'adfadsf', 1, 'Y', 1030.00, NULL, 1, 1, '2019-09-07 12:59:42', '2019-09-08 00:15:52'),
+(2, 'Item 2', 'Item 2', 1, 'Y', 90090.00, NULL, 1, NULL, '2019-09-07 23:26:04', NULL),
+(3, 'Item 1', 'item description', 1, 'Y', 5455.00, NULL, 1, 1, '2019-09-07 23:27:53', '2019-09-12 10:57:41');
 
 -- --------------------------------------------------------
 
@@ -689,7 +786,8 @@ CREATE TABLE `gs_payment_template` (
 --
 
 INSERT INTO `gs_payment_template` (`id`, `name`, `date_consider_for_payment`, `type_of_payment`, `min_days`, `payment_day`, `remark`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'Montly First Monday', '2019-09-02', '55', 5, '2019-09-06', NULL, 1, NULL, NULL, '2019-09-07 14:43:20', NULL);
+(1, 'Montly First Monday', '2019-09-02', '55', 5, '2019-09-06', NULL, 1, NULL, NULL, '2019-09-07 14:43:20', NULL),
+(2, 'Every Friday', '2019-09-06', '55', 7, '2019-09-20', NULL, 1, NULL, NULL, '2019-09-07 22:46:34', NULL);
 
 -- --------------------------------------------------------
 
@@ -702,17 +800,24 @@ CREATE TABLE `gs_quotation_detail` (
   `quotation_header_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `qty` int(11) NOT NULL,
-  `uom_id` int(11) NOT NULL,
+  `uom_id` int(11) DEFAULT NULL,
   `rate` double(10,2) NOT NULL DEFAULT 0.00,
   `amount` double(10,2) NOT NULL DEFAULT 0.00,
   `tax_amount` double(10,2) NOT NULL DEFAULT 0.00,
   `product_img` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_active` char(1) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_by` int(11) NOT NULL,
+  `created_by` int(11) DEFAULT NULL,
   `updated_by` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `gs_quotation_detail`
+--
+
+INSERT INTO `gs_quotation_detail` (`id`, `quotation_header_id`, `item_id`, `qty`, `uom_id`, `rate`, `amount`, `tax_amount`, `product_img`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
+(1, 1, 3, 1, NULL, 1.00, 5455.00, 1.00, 'http://127.0.0.1:8000/uploads/1/2019-09/7f09c7452d18f668b5278af6567afc50.png', '1', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -728,6 +833,7 @@ CREATE TABLE `gs_quotation_header` (
   `project_id` int(11) NOT NULL,
   `client_id` int(11) NOT NULL,
   `site_id` int(11) NOT NULL,
+  `customer_po_no` int(11) DEFAULT NULL,
   `attachment_details` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_active` char(1) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_by` int(11) NOT NULL,
@@ -735,6 +841,13 @@ CREATE TABLE `gs_quotation_header` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `gs_quotation_header`
+--
+
+INSERT INTO `gs_quotation_header` (`id`, `quotation_date`, `status`, `quotation_approval_date`, `project_id`, `client_id`, `site_id`, `customer_po_no`, `attachment_details`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
+(1, '2019-09-08', '1', '2019-09-08 14:18:10', 2, 1, 1, 123, 'uploads/1/2019-09/project.png', 'Y', 1, 1, '2019-09-08 08:48:34', '2019-09-10 07:58:43');
 
 -- --------------------------------------------------------
 
@@ -762,7 +875,8 @@ CREATE TABLE `gs_raw_material` (
 --
 
 INSERT INTO `gs_raw_material` (`id`, `nm`, `model_nm`, `uom_id`, `qty`, `default_vendor`, `is_active`, `photo`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'Laptop', 'ideapad 320', 1, '5.00', 1, 'Y', NULL, 1, NULL, '2019-09-07 13:16:47', NULL);
+(1, 'Laptop', 'ideapad 320', 1, '5.00', 1, 'Y', NULL, 1, 1, '2019-09-07 13:16:47', '2019-09-08 00:52:54'),
+(2, 'Plywood', 'Ply', 2, '888.00', 1, 'Y', NULL, 1, 1, '2019-09-08 01:29:38', '2019-09-12 10:01:39');
 
 -- --------------------------------------------------------
 
@@ -774,10 +888,10 @@ CREATE TABLE `gs_raw_material_item_mapping` (
   `id` int(10) UNSIGNED NOT NULL,
   `item_id` int(11) NOT NULL,
   `raw_material_id` int(11) DEFAULT NULL,
-  `uom_id` int(11) DEFAULT NULL,
+  `uom_ids` int(11) DEFAULT NULL,
   `qty` decimal(10,2) NOT NULL DEFAULT 0.00,
   `is_active` char(1) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_by` int(11) NOT NULL,
+  `created_by` int(11) DEFAULT NULL,
   `updated_by` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -787,8 +901,9 @@ CREATE TABLE `gs_raw_material_item_mapping` (
 -- Dumping data for table `gs_raw_material_item_mapping`
 --
 
-INSERT INTO `gs_raw_material_item_mapping` (`id`, `item_id`, `raw_material_id`, `uom_id`, `qty`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 1, '67.00', 'Y', 1, 1, '2019-09-07 13:31:07', '2019-09-07 13:32:47');
+INSERT INTO `gs_raw_material_item_mapping` (`id`, `item_id`, `raw_material_id`, `uom_ids`, `qty`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, 1, '70.00', 'Y', NULL, 1, NULL, '2019-09-12 10:58:49'),
+(2, 2, 1, 1, '90.00', 'Y', NULL, 1, NULL, '2019-09-12 10:00:57');
 
 -- --------------------------------------------------------
 
@@ -801,9 +916,9 @@ CREATE TABLE `gs_raw_material_vendor_mapping` (
   `raw_material_id` int(11) NOT NULL,
   `vendor_id` int(11) NOT NULL,
   `rate` decimal(10,2) NOT NULL DEFAULT 0.00,
-  `uom_id` int(11) DEFAULT NULL,
+  `uom_ids` int(11) DEFAULT NULL,
   `is_active` char(1) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
-  `created_by` int(11) NOT NULL,
+  `created_by` int(11) DEFAULT NULL,
   `updated_by` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -813,8 +928,33 @@ CREATE TABLE `gs_raw_material_vendor_mapping` (
 -- Dumping data for table `gs_raw_material_vendor_mapping`
 --
 
-INSERT INTO `gs_raw_material_vendor_mapping` (`id`, `raw_material_id`, `vendor_id`, `rate`, `uom_id`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '68886.00', 1, 'Y', 1, NULL, '2019-09-07 13:23:08', NULL);
+INSERT INTO `gs_raw_material_vendor_mapping` (`id`, `raw_material_id`, `vendor_id`, `rate`, `uom_ids`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
+(1, 2, 1, '90909.00', 2, 'Y', NULL, NULL, NULL, NULL),
+(2, 1, 1, '5000.00', 1, 'Y', NULL, 1, NULL, '2019-09-12 10:57:58');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gs_status_master`
+--
+
+CREATE TABLE `gs_status_master` (
+  `id` int(11) NOT NULL,
+  `name` varchar(191) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gs_status_master`
+--
+
+INSERT INTO `gs_status_master` (`id`, `name`) VALUES
+(1, 'New'),
+(2, 'Accept'),
+(3, 'Reject'),
+(4, 'Paid'),
+(5, 'Pending'),
+(6, 'Drop'),
+(7, 'Approved');
 
 -- --------------------------------------------------------
 
@@ -837,7 +977,8 @@ CREATE TABLE `gs_uom` (
 --
 
 INSERT INTO `gs_uom` (`id`, `nm`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'Unit 1', 'Y', 1, 1, '2019-09-07 12:51:03', '2019-09-07 12:51:15');
+(1, 'Unit 1', 'Y', 1, 1, '2019-09-07 12:51:03', '2019-09-07 12:51:15'),
+(2, 'Unit 2', 'Y', 1, NULL, '2019-09-08 01:27:57', NULL);
 
 -- --------------------------------------------------------
 
@@ -873,7 +1014,26 @@ CREATE TABLE `gs_vendor` (
 --
 
 INSERT INTO `gs_vendor` (`id`, `vendor_name`, `address1`, `address2`, `city`, `state`, `pincode`, `gst_no`, `payment_template_id`, `bank_acc_no`, `ifsc_code`, `branch_name`, `phone_no`, `contact_person`, `pan_no`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'Test Vendor', 'jafldjl', NULL, 'Pune', 'Maharashtra', '411033', '123456789012345', NULL, 'dfadf', 'asdfads', 'adfadf', 'sdfad', 'asfasdf', 'fasdf', 'Y', 1, NULL, '2019-09-07 13:15:46', NULL);
+(1, 'Test Vendor', 'jafldjl', NULL, 'Pune', 'Maharashtra', '411033', '123456789012345', 1, 'dfadf', 'asdfads', 'adfadf', 'sdfad', 'asfasdf', 'fasdf', 'Y', 1, 1, '2019-09-07 13:15:46', '2019-09-12 10:01:53');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gs_yes_no`
+--
+
+CREATE TABLE `gs_yes_no` (
+  `id` int(11) NOT NULL,
+  `name` varchar(191) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gs_yes_no`
+--
+
+INSERT INTO `gs_yes_no` (`id`, `name`) VALUES
+(1, 'Yes'),
+(0, 'No');
 
 -- --------------------------------------------------------
 
@@ -1111,6 +1271,12 @@ ALTER TABLE `gs_raw_material_vendor_mapping`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `gs_status_master`
+--
+ALTER TABLE `gs_status_master`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `gs_uom`
 --
 ALTER TABLE `gs_uom`
@@ -1166,25 +1332,25 @@ ALTER TABLE `cms_email_templates`
 -- AUTO_INCREMENT for table `cms_logs`
 --
 ALTER TABLE `cms_logs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT for table `cms_menus`
 --
 ALTER TABLE `cms_menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `cms_menus_privileges`
 --
 ALTER TABLE `cms_menus_privileges`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `cms_moduls`
 --
 ALTER TABLE `cms_moduls`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `cms_notifications`
@@ -1196,13 +1362,13 @@ ALTER TABLE `cms_notifications`
 -- AUTO_INCREMENT for table `cms_privileges`
 --
 ALTER TABLE `cms_privileges`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `cms_privileges_roles`
 --
 ALTER TABLE `cms_privileges_roles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `cms_settings`
@@ -1262,7 +1428,7 @@ ALTER TABLE `gs_company`
 -- AUTO_INCREMENT for table `gs_item`
 --
 ALTER TABLE `gs_item`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `gs_item_type`
@@ -1274,43 +1440,49 @@ ALTER TABLE `gs_item_type`
 -- AUTO_INCREMENT for table `gs_payment_template`
 --
 ALTER TABLE `gs_payment_template`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gs_quotation_detail`
 --
 ALTER TABLE `gs_quotation_detail`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `gs_quotation_header`
 --
 ALTER TABLE `gs_quotation_header`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `gs_raw_material`
 --
 ALTER TABLE `gs_raw_material`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gs_raw_material_item_mapping`
 --
 ALTER TABLE `gs_raw_material_item_mapping`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gs_raw_material_vendor_mapping`
 --
 ALTER TABLE `gs_raw_material_vendor_mapping`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `gs_status_master`
+--
+ALTER TABLE `gs_status_master`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `gs_uom`
 --
 ALTER TABLE `gs_uom`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gs_vendor`
